@@ -11,11 +11,18 @@
 
 (function() {
 
+
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        var numbers = document.getElementById("numbers").value;
+        alert("this is my array" + numbers);
+        var array = numbers.split(', ').sort(function (a, b) {
+            return a - b
+        });
+        alert("this is the sorted array " + array);
 
     });
 

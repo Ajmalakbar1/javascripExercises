@@ -9,8 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-function test() {
-    return true;
+function BtnClick(x) {
+    let fn = parseInt(document.getElementById("op-one").value);
+    let sn = parseInt(document.getElementById("op-two").value);
+
+    switch (x) {
+        case "addition":
+        alert(fn + sn);
+        break;
+        case "subtraction":
+        alert(fn - sn);
+        break;
+        case "multiplication":
+        alert(fn * sn);
+        break;
+        case "division":
+        alert(fn / sn);
+        break;
+
+    }
 }
 
 (function() {
