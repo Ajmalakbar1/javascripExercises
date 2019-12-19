@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
-    // lunch time
-})();
+
+    (function() {
+        varp person = {
+            name:"stephan",
+            lastname:"wieme",
+            bDay: document.getElementById("dob-day").value,
+            bMonth: document.getElementById("dob-month").value,
+            bYear: document.getElementById("dob-year").value,
+        };
+        
+    })();
