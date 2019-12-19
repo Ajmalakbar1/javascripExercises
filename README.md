@@ -1,2 +1,2 @@
 # javascripExercises
-i'mw with struggling cheptar.3 & chapter.4
+i'm with struggling 4.3 & 4.4
