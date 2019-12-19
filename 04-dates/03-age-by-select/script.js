@@ -12,11 +12,11 @@
 (function() {
 
     // your code here
-
+    // trying to find some
     (function() {
         varp person = {
             name:"stephan",
-            lastname:"wieme",
+            lastname:"van del",
             bDay: document.getElementById("dob-day").value,
             bMonth: document.getElementById("dob-month").value,
             bYear: document.getElementById("dob-year").value,

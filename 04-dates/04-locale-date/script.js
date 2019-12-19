@@ -15,12 +15,18 @@
 
     // your code here
 
-
-
 (function() {
 
-    var newDate = new Date();
-    document.getElementById("target").innerHTML = newDate;
-
+    // https://stackoverflow.com/questions/3552461/how-to-format-a-javascript-date
+    //https://reactgo.com/format-date-time-javascript/
+    var options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+    var options2 = { hour12 : false, hour:  "numeric", minute: "numeric"};
+    var today  = new Date();
+    date = today.toLocaleDateString("en-GB", options);
+    time = today.toLocaleTimeString("en-GB", options2);
+    date = date.replace(',','');
+    time = time.replace(':','h');
+    out = date+", "+time;
+    document.getElementById("target").innerHTML = out;
 
 })();
