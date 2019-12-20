@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+document.getElementById("run").addEventListener("click", function(){
 
     var people = [
         {
@@ -90,5 +90,14 @@
     ];
 
     // your code here
+    var newPeople =[];
+    for(var i=0;i<people.length;i++){
+        if (people[i].age>18){
+         newPeople.push(people[i].age);
 
-})();
+
+        }
+
+    }
+    console.log(newPeople);
+});
