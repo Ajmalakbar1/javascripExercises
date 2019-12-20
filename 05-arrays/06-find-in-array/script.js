@@ -95,7 +95,7 @@ document.getElementById("run").addEventListener("click", function(){
         for(var i=0;i<people.length;i++){
 
             if (people[i].firstname === "Jean" && people[i].lastname==="Dupont"){
-                console.log("the email address from jean is: " + people[i].email);
+                console.log("the email address from jean is: " + people[i].email + "the index"+i);
 
             }
 

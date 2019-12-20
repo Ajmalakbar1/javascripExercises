@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+document.getElementById("run").addEventListener("click", function(){
 
     var people = [
         {
@@ -39,6 +39,11 @@
         },
     ];
 
-    // your code here
 
-})();
+
+            people.forEach(name =>console.log(name.firstname +" "+ name.lastname));
+
+    });
+
+
+
