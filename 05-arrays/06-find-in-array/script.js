@@ -9,7 +9,6 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-document.getElementById("run").addEventListener("click", function(){
 
     var people = [
         {
@@ -91,11 +90,12 @@ document.getElementById("run").addEventListener("click", function(){
 
     // your code here
 
+document.getElementById("run").addEventListener("click", function(){
 
         for(var i=0;i<people.length;i++){
 
             if (people[i].firstname === "Jean" && people[i].lastname==="Dupont"){
-                console.log("the email address from jean is: " + people[i].email + "the index"+i);
+                console.log("the email address from jean is: " + people[i].email + "the index" + i);
 
             }
 

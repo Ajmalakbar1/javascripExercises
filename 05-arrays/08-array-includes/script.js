@@ -8,8 +8,8 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
 (function() {
+
 
     var fruits = [
         "apple",
@@ -23,9 +23,19 @@
         "durian",
         "peach",
         "grapes",
-        "cherry",
+        "cherry"
     ];
 
     // your code here
 
-})();
+
+    document.getElementById("run").addEventListener("click", function () {
+        fruits.forEach(function (element) {
+            if (element == "apple") {
+                console.log("Yes");
+            }
+            else
+            {
+                console.log("No");
+            }
+        })})})();

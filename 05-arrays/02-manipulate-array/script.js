@@ -27,7 +27,7 @@
 
         fruits[0]="banana";
         fruits[9]="kiwi";
-        
+
         alert(fruits)
     // your code here
 
