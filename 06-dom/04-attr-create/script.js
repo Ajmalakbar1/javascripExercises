@@ -13,4 +13,18 @@
 
     // your code here
 
-})();
+
+
+
+
+
+        let element = document.createElement("img");
+        let attribute = document.getElementById("source").getAttribute("data-image");
+        element.setAttribute("src", attribute);
+        let c = document.getElementById("source");
+        let b = document.querySelector(".material");
+        let a = document.getElementById("target");
+        c.removeAttribute("data-image");
+        b.removeChild(c);
+        a.appendChild(element);
+    })();
