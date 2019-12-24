@@ -17,8 +17,22 @@
         "../../_shared/img/compass.svg",
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
-    ];
 
+    ];
+    let number=0;
+    document.getElementById("next").addEventListener("click",function () {
+        let img = document.getElementsByTagName("img")[0];
+        if (number <=4) {
+            img.setAttribute("src", gallery[number]);
+            number++;
+        }
+            else {
+                number =0;
+            }
+        
+
+
+    })
     // your code here
 
 })();
