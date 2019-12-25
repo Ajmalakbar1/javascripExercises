@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    var people = [
+    let people = [
         {
             firstname: "Grenville",
             lastname: "Stive",
@@ -89,9 +89,8 @@
         },
     ];
 
-    // your code here
-    for (let i=0; i < 10; i++){
-        console.log('Hello Ajmal, i')
-    }
-
+    document.getElementById("run").addEventListener("click", function(){
+        let totalAge = people.reduce((plus, {age}) => plus + age, 0);
+        console.log(totalAge);
+    })
 })();
