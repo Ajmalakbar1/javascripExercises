@@ -14,7 +14,7 @@
     // your code here
 document.getElementById("target").addEventListener("load",myFunction());
     function myFunction(){
-    var i = 0;
+    let i = 0;
     document.write('<table border="1" cellspacing="0" bgcolor="#ff7f50" id="Tabula">');
     for (i = 1; i < 11; i++) {
         document.write("<tr>");
