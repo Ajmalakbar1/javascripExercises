@@ -14,7 +14,7 @@
     // your code here
     document.getElementById("run").addEventListener("click",function(){
 
-        let x = document.getElementById("pass-one").value;
+        let x = document.getElementById("pass-one").value;  //variables 
         let y = document.getElementById("pass-two").value;
         if (x !== y) {
             document.getElementById("pass-one").classList.add("error");
