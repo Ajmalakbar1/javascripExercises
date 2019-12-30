@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    document.getElementById("pass-one").addEventListener("keypress", function () {
 
+
+        let counter = document.getElementById("pass-one").value.length;
+
+        document.getElementById("counter").innerText=counter+" /10";
+        if (counter == 10) {
+            document.getElementById("pass-one").maxLength = 10;
+        }
+});
 })();
