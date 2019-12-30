@@ -12,17 +12,15 @@
 (function() {
 
     // your code here
-document.getElementById("target").addEventListener("load",myFunction());
-    function myFunction(){
-    let i = 0;
-    document.write('<table border="1" cellspacing="0" bgcolor="#ff7f50" id="Tabula">');
+    var hereAdd = '<table>';
     for (i = 1; i < 11; i++) {
-        document.write("<tr>");
+        hereAdd += "<tr>";
         for (j = 1; j < 11; j++) {
-            document.write("<td>" + i + " x " + j + " = " + j * i + "</td>");
+            hereAdd += "<td>" + i + " x " + j + " = " + j * i + "</td>";
         }
-        document.write("</tr>");
+        hereAdd +="</tr>";
     }
-    document.write("</table>");
-}
+    hereAdd +="</table>";
+
+document.getElementById("target").innerHTML =  hereAdd ;
 })();
