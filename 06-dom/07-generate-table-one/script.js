@@ -34,6 +34,8 @@
             tbdy.appendChild(tr);
         }
         tbl.appendChild(tbdy);
-        body.appendChild(tbl)
+        //body.appendChild(tbl);
+            document.getElementById("target").appendChild(tbl);
+
 
     }
