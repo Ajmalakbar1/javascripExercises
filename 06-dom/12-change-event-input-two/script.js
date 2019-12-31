@@ -9,8 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
+    document.getElementById("pass-one").addEventListener("keypress",function() {
+        let myVal = document.getElementById("pass-one").value;
+
+            let letters = new RegExp(".*[0-9].*[0-9]");
+            if(myVal.length >= 8 && letters.test(myVal))
+           {
+                document.getElementById("validity").innerHTML="OK";
+           }
+            else
+            {
+                document.getElementById("validity").innerHTML="Not OK";
+            }
+
+    });
 
 })();
