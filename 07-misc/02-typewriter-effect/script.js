@@ -13,4 +13,23 @@
 
     // your code here
 
+    let i=0;
+    let txt = document.getElementById("target").innerText;
+    let speed = 80;
+    // the speed of text...
+    document.getElementById("target").innerHTML="";
+
+    function typewriter() {
+        if(i < txt.length) {
+            document.getElementById("target").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typewriter,speed);
+
+        }
+    }
+    typewriter();
+
+
+
+
 })();
