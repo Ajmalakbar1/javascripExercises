@@ -12,5 +12,29 @@
 (function() {
 
     // your code here
+    let a="";
+
+        document.getElementById("part-one").addEventListener("click",function () {
+
+    do {
+        a = Math.floor(Math.random() * 480) + 2;
+    }while(a<=400)
+    document.getElementById("target").innerHTML = "0"+a;
+})
+
+    document.getElementById("part-two").addEventListener("click",myFunc);
+    document.getElementById("part-three").addEventListener("click",myFunc);
+    document.getElementById("part-four").addEventListener("click", myFunc);
+    function myFunc(){
+        let c =document.getElementById("target").innerText;
+        if(c.length<10) {
+            let b = "";
+            do {
+                b = Math.floor(Math.random() * 100) + 2;
+            } while (b < 10)
+
+            document.getElementById("target").innerHTML = c + b;
+        }
+    }
 
 })();
