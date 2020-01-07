@@ -11,4 +11,13 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        fetch("http://localhost:12345/api.json")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+    });
 })();
