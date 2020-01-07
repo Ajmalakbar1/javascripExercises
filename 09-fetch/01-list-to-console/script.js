@@ -14,7 +14,7 @@
 
     document.getElementById("run").addEventListener("click", function(){
 
-        fetch("http://localhost:63342/PhpstormProjects/javascripExercises/09-fetch/01-list-to-console/api.json")
+        fetch("api.json")
             .then(response => response.json())
             .then(data => {
                 console.log(data);
