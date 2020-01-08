@@ -11,4 +11,20 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        fetch("http://localhost:12345/api.json")
+            .then(response => response.json())
+            .then(data => {
+                let heroNew1 = document.getElementById("hero-name").value;
+                let heroNew2 = document.getElementById("hero-alter-ego").value;
+                let heroNew3 = document.getElementById("hero-powers").value;
+                let object6 = {"id":6, "name":heroNew1,"alterEgo":heroNew2,"abilities":[heroNew3]}
+                data.heroes.push(object6);
+                console.log(data);
+
+
+            })
+    });
+
 })();
