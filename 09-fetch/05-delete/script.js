@@ -11,4 +11,21 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        fetch("http://localhost:12345/_shared/api.json")
+            .then(response => response.json())
+            .then(data => {
+                let id = document.getElementById("hero-id").value;
+
+                data.heroes.splice((id-1),1);
+                console.log(data.heroes);
+            });
+
+
+
+    })
+
+
 })();
